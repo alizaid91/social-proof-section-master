@@ -1,0 +1,81 @@
+body {
+  font-family: "League Spartan", sans-serif;
+  margin: 20px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-headings h1 {
+  color: hsl(300, 43%, 22%);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.top-headings p {
+  color: hsl(303, 15%, 53%);
+  font-size: 20px;
+}
+
+.rating1,
+.rating2,
+.rating3 {
+  background-color: hsl(300, 24%, 96%);
+  padding: 10px 0 10px 0;
+  border-radius: 5px;
+}
+
+.rating h4 {
+  color: hsl(300, 43%, 22%);
+  margin: 0px;
+  padding-top: 10px;
+}
+
+.review1,
+.review2,
+.review3 {
+  color: white;
+  background-color: hsl(300, 43%, 22%);
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.reviews img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  float: left;
+}
+
+@media only screen and (max-width: 550px) {
+  .top-headings {
+    text-align: center;
+  }
+
+  .rating {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 15px;
+  }
+
+  .rating1,
+  .rating2,
+  .rating3 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 10px 0;
+    text-align: center;
+  }
+
+  .reviews {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 15px;
+  }
+}

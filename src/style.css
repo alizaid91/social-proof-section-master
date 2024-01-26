@@ -1,11 +1,6 @@
 body {
   font-family: "League Spartan", sans-serif;
-  margin: 20px;
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
+  margin: 30px;
 }
 
 .top-headings h1 {
@@ -18,6 +13,7 @@ body {
 .top-headings p {
   color: hsl(303, 15%, 53%);
   font-size: 20px;
+  line-height: 25px;
 }
 
 .rating1,
@@ -25,7 +21,7 @@ body {
 .rating3 {
   background-color: hsl(300, 24%, 96%);
   padding: 10px 0 10px 0;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .rating h4 {
@@ -39,9 +35,27 @@ body {
 .review3 {
   color: white;
   background-color: hsl(300, 43%, 22%);
-  padding: 20px;
-  text-align: center;
-  border-radius: 5px;
+  padding: 30px 20px 10px 20px;
+  text-align: left;
+  border-radius: 10px;
+}
+
+.reviews h5 {
+  margin: 0px;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.reviews span {
+  color: hsl(333, 80%, 67%);
+  font-size: 16px;
+}
+
+.reviews p {
+  padding-top: 5px;
+  line-height: 25px;
+  font-size: 18px;
+  color: hsl(300, 24%, 96%);
 }
 
 .reviews img {
@@ -49,11 +63,21 @@ body {
   width: 40px;
   height: 40px;
   float: left;
+  margin-right: 20px;
 }
 
 @media only screen and (max-width: 550px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
   .top-headings {
     text-align: center;
+  }
+
+  .top-headings h1 {
+    padding: 0px 20px 0px 20px;
   }
 
   .rating {
